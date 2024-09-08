@@ -84,6 +84,41 @@
     </header>
     <!-- end header section -->
     <!-- slider section -->
+
+    <style>
+      .carousel-item {
+        display: none;
+        margin-left: 200px; /* Configuration pour les grands écrans */
+        float: none;
+        border-radius: 10px;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+      
+      .carousel-item img {
+        max-width: 100%;
+        margin-right: 100px;
+        border-radius: 100px;
+        max-height: 100%;
+        object-fit: contain; /* Garde le ratio d'aspect */
+      }
+      
+      /* Pour les écrans plus petits (par exemple, en dessous de 768px) */
+      @media (max-width: 768px) {
+        .carousel-item {
+          margin: 0 auto; /* Centrer horizontalement pour les petits écrans */
+        }
+      
+        .carousel-item img {
+          margin: 0 auto; /* Centrer l'image */
+          display: block; /* Assure que l'image soit centrée */
+          max-width: 40%; /* Réduit la largeur de l'image pour les petits écrans */
+          max-height: 50%; /* Réduit la hauteur de l'image pour les petits écrans */
+          border-radius: 20px; /* Ajuster si besoin pour les petits écrans */
+        }
+      }
+      </style>
+      
     <section class=" slider_section position-relative">
       <div class="container">
         <div class="row">
