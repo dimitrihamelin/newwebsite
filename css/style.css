@@ -365,7 +365,7 @@ a:focus {
 
 .about_img-container {
   width: 225px;
-  background-color: #1ba1b9;
+  background-color: black;
   height: 225px;
   border-radius: 100%;
   display: flex;
@@ -376,15 +376,17 @@ a:focus {
 }
 
 .about_card .about_img-box {
-  width: 75px;
+  width: 150px;
 }
 
 .about_card .about-detail p {
-  margin-top: 15px;
+  margin-top: 0px;
 }
 
 .about_card img {
   width: 100%;
+  height: 100%;
+  object-fit: cover; /* ou "contain" selon le résultat souhaité */
 }
 
 /* end about section */

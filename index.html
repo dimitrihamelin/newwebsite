@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- Basic -->
+    <!-- Basic Rest --> 
+  
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- Mobile Metas -->
@@ -194,9 +195,6 @@
           <div class="about_card">
             <div class="about-detail">
               <div class="about_img-container">
-                <div class="about_img-box">
-                  <img src="images/shop.png" alt="" />
-                </div>
               </div>
               <div class="card_detail-ox">
                 <h4>
@@ -231,31 +229,25 @@
 
     <!-- end about section -->
 
-<!-- who section -->
-<style>
-  .rounded {
-      border-radius: 15px; /* Vous pouvez ajuster cette valeur selon vos besoins */
-  }
-</style>
-
-<section class="who_section">
-  <br>
-  <br>
-  <div style="text-align: center;">
-    <div>
-      <h2>
-        <b>
-          What is Locarodix ?
-        </b>
-      </h2>
-      <p style="justify-content: center; padding: 10px;">
-        Locarodix is an innovative project founded by the Team Locarodix, aimed at developing cutting-edge technological solutions and applications. One of the notable products developed by Locarodix is the "Star-Me" mobile application, which focuses on creating a dynamic social networking experience by incorporating unique features such as a points system to reward positive interactions and engagement.
-      </p>
-    </div>
-  </div>
-  <br>
-  <br>
-</section>
+    <!-- who section -->
+    <section class="who_section">
+      <br>
+      <br>
+      <div style="text-align: center;">
+        <div>
+          <h2>
+            <b>
+              What is Locarodix ?
+            </b>
+          </h2>
+          <p style="justify-content: center; padding: 10px;">
+            Locarodix is an innovative project founded by the Team Locarodix, aimed at developing cutting-edge technological solutions and applications. One of the notable products developed by Locarodix is the "Star-Me" mobile application, which focuses on creating a dynamic social networking experience by incorporating unique features such as a points system to reward positive interactions and engagement.
+          </p>
+        </div>
+      </div>
+      <br>
+      <br>
+    </section>
 
     <!-- end who section -->
 
@@ -291,15 +283,6 @@
                 <p>Olivier Suelves OTT is the co-president of T0MIKE Records, an independent music studio. His role involves overseeing the studio's operations and fostering its growth in the music industry.</p>
               </div> 
             </div>
-            <div class="feature_card">
-              <div class="feature_img-container">
-                <img src="images/tech.png" alt="Techone" />
-              </div>
-              <div class="feature_detail-box">
-                <h4>Techeone</h4>
-                <p>TechOne, known as webteches on GitHub, is a 19-year-old web developer passionate about technology. Based in France, he specializes in web and JavaScript development. TechOne is involved in projects like CubexLand and RedProjet, specifically working on a Minecraft server project named ProjetHarkoziamc.</p>
-              </div>
-            </div>
           </div>
           <!-- Ligne 2 -->
           <div class="feature_row">
@@ -332,6 +315,8 @@
         width: 100%;
         padding-bottom: 100%; /* Pour forcer un ratio carré */
         position: relative;
+        border-radius: 50%; /* Bordure circulaire */
+        overflow: hidden; /* Empêche l'image de dépasser du cercle */
       }
 
       .feature_img-container img {
@@ -341,8 +326,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover; /* Pour que l'image remplisse le conteneur tout en gardant son ratio */
-        border-radius: 50%; /* Bordure circulaire */
-        background: none; /* Enlève le fond noir */
+        border-radius: 50%; /* Garder l'image circulaire */
       }
 
       /* Pour les écrans moyens */
