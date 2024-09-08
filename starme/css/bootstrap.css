@@ -6247,7 +6247,6 @@ a.close.disabled {
   max-width: 100%;
   margin-right: 100px;
   border-radius: 100px;
-  border-color: black;
   max-height: 100%;
   object-fit: contain; /* Garde le ratio d'aspect */
 }
