@@ -6235,17 +6235,23 @@ a.close.disabled {
 }
 
 .carousel-item {
-  position: relative;
   display: none;
-  float: left;
-  width: 100%;
-  margin-right: -100%;
+  margin-left: 200px;
+  float: 10px;
+  border-radius: 10px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  transition: -webkit-transform 0.6s ease-in-out;
-  transition: transform 0.6s ease-in-out;
-  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
 }
+
+.carousel-item img {
+  max-width: 100%;
+  margin-right: 100px;
+  border-radius: 100px;
+  border-color: black;
+  max-height: 100%;
+  object-fit: contain; /* Garde le ratio d'aspect */
+}
+
 
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
@@ -6259,45 +6265,6 @@ a.close.disabled {
   display: block;
 }
 
-.carousel-item-next:not(.carousel-item-left),
-.active.carousel-item-right {
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-}
-
-.carousel-item-prev:not(.carousel-item-right),
-.active.carousel-item-left {
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-}
-
-.carousel-fade .carousel-item {
-  opacity: 0;
-  transition-property: opacity;
-  -webkit-transform: none;
-  transform: none;
-}
-
-.carousel-fade .carousel-item.active,
-.carousel-fade .carousel-item-next.carousel-item-left,
-.carousel-fade .carousel-item-prev.carousel-item-right {
-  z-index: 1;
-  opacity: 1;
-}
-
-.carousel-fade .active.carousel-item-left,
-.carousel-fade .active.carousel-item-right {
-  z-index: 0;
-  opacity: 0;
-  transition: 0s 0.6s opacity;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .carousel-fade .active.carousel-item-left,
-  .carousel-fade .active.carousel-item-right {
-    transition: none;
-  }
-}
 
 .carousel-control-prev,
 .carousel-control-next {
