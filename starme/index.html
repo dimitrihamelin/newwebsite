@@ -146,10 +146,6 @@
           <div class="col-md-5">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
-                <li class="active"></li>
-                <li ></li>
-                <li ></li>
-              </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div>
@@ -185,79 +181,92 @@
     <!-- end slider section -->
   </div>
 
-  <!-- video -->
+<!-- video -->
 
-  <br>
-  <br>
-  
-  <section class="video_section">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Watch Our Introduction Video
-        </h2>
-        <br>
-        <br>
-      </div>
-      <div class="video_container" style="text-align: center;">
-        <iframe class="responsive_iframe" src="https://www.youtube.com/embed/3NGJLiHD0rY" 
-          title="YouTube video player" frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
-        </iframe>
-      </div>
+<br>
+<br>
+
+<section class="video_section">
+  <div class="container">
+    <div class="heading_container">
+      <h2>
+        Watch Our Introduction Video
+      </h2>
+      <br>
+      <br>
     </div>
-  </section>
-  
-  <style>
-    /* Container and video styles */
-    .video_section {
-      padding: 20px;
-    }
-  
-    .container {
-      max-width: 100%;
-      margin: 0 auto;
-    }
-  
+    <div class="video_container" style="text-align: center;">
+      <iframe class="responsive_iframe" src="https://www.youtube.com/embed/3NGJLiHD0rY" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Container and video styles */
+  .video_section {
+    padding: 20px;
+  }
+
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .heading_container h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  .video_container {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  /* Make the iframe responsive */
+  .responsive_iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+
+  /* Adjustments for smaller screens */
+  @media (max-width: 768px) {
     .heading_container h2 {
-      font-size: 2em;
-      margin-bottom: 10px;
+      font-size: 1.5em;
     }
-  
+
     .video_container {
-      margin: 0 auto;
-      max-width: 100%;
+      padding: 10px;
     }
-  
-    /* Make the iframe responsive */
+  }
+
+  @media (max-width: 480px) {
+    .heading_container h2 {
+      font-size: 1.2em;
+    }
+
+    .video_section {
+      padding: 10px;
+    }
+  }
+
+  /* Adjustments for larger screens */
+  @media (min-width: 1200px) {
+    .video_container {
+      max-width: 70%; /* Reduce the width for larger screens */
+    }
+
     .responsive_iframe {
-      width: 100%;
+      max-width: 100%;
       height: auto;
-      aspect-ratio: 16/9; /* Ensures proper aspect ratio */
     }
-  
-    /* Adjustments for smaller screens */
-    @media (max-width: 768px) {
-      .heading_container h2 {
-        font-size: 1.5em;
-      }
-  
-      .video_container {
-        padding: 10px;
-      }
-    }
-  
-    @media (max-width: 480px) {
-      .heading_container h2 {
-        font-size: 1.2em;
-      }
-  
-      .video_section {
-        padding: 10px;
-      }
-    }
-  </style>
+  }
+</style>
+
   
 
   
