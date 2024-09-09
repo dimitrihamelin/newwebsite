@@ -200,7 +200,7 @@
         <br>
       </div>
       <div class="video_container" style="text-align: center;">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/3NGJLiHD0rY" 
+        <iframe class="responsive_iframe" src="https://www.youtube.com/embed/3NGJLiHD0rY" 
           title="YouTube video player" frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
           allowfullscreen>
@@ -208,6 +208,57 @@
       </div>
     </div>
   </section>
+  
+  <style>
+    /* Container and video styles */
+    .video_section {
+      padding: 20px;
+    }
+  
+    .container {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  
+    .heading_container h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+  
+    .video_container {
+      margin: 0 auto;
+      max-width: 100%;
+    }
+  
+    /* Make the iframe responsive */
+    .responsive_iframe {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16/9; /* Ensures proper aspect ratio */
+    }
+  
+    /* Adjustments for smaller screens */
+    @media (max-width: 768px) {
+      .heading_container h2 {
+        font-size: 1.5em;
+      }
+  
+      .video_container {
+        padding: 10px;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .heading_container h2 {
+        font-size: 1.2em;
+      }
+  
+      .video_section {
+        padding: 10px;
+      }
+    }
+  </style>
+  
 
   
   <!-- feature section -->
