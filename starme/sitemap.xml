@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>https://locarodix.com/starme/index.html</loc>
+      <lastmod>2024-09-08</lastmod>
+      <priority>1.00</priority>
+   </url>
+   <url>
+      <loc>https://locarodix.com/starme/contact.html</loc>
+      <lastmod>2024-09-08</lastmod>
+      <priority>0.80</priority>
+   </url>
+   <url>
+      <loc>https://locarodix.com/starme/store.html</loc>
+      <lastmod>2024-09-08</lastmod>
+      <priority>0.80</priority>
+   </url>
+   <url>
+      <loc>https://locarodix.com/starme/policy.html</loc>
+      <lastmod>2024-09-08</lastmod>
+      <priority>0.60</priority>
+   </url>
+   <url>
+      <loc>https://locarodix.com/starme/about.html</loc>
+      <lastmod>2024-09-08</lastmod>
+      <priority>0.60</priority>
+   </url>
+</urlset>
