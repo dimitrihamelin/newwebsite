@@ -271,19 +271,26 @@
       max-width: 100%;
       margin: 0 auto;
     }
-
+  
     .responsive_video {
       width: 100%;
-      height: auto;
+      height: 300px; /* Hauteur par défaut pour les mobiles */
     }
-
+  
+    @media screen and (min-width: 768px) {
+      .responsive_video {
+        height: 360px; /* Hauteur légèrement augmentée pour les tablettes */
+      }
+    }
+  
     @media screen and (min-width: 1024px) {
       .responsive_video {
         width: 800px; /* Largeur pour les écrans ordinateurs */
-        height: 600px; /* Hauteur adaptée */
+        height: 450px; /* Hauteur adaptée */
       }
     }
   </style>
+  
 
   
   <br>
