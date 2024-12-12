@@ -29,6 +29,75 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
+  <script>
+    // Détecter la langue du navigateur
+    const userLang = navigator.language.startsWith('fr') ? 'fr' : 'en';
+  
+    // Appliquer les traductions à la page
+    function applyTranslations(lang) {
+      document.querySelectorAll("[data-i18n]").forEach(element => {
+        const key = element.getAttribute("data-i18n");
+        if (translations[lang] && translations[lang][key]) {
+          element.innerHTML = translations[lang][key];
+        }
+      });
+    }
+  
+    // Charger les traductions au démarrage
+    document.addEventListener("DOMContentLoaded", () => {
+      applyTranslations(userLang);
+    });
+  </script>  
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width");
+      document
+        .querySelector(".custom_menu-btn")
+        .classList.toggle("menu_btn-style");
+    }
+  </script>
+
+  <script>
+const translations = {
+  en: {
+    "nav1": "Terms and Conditions",
+    "nav2": "User Conduct and Obligations",
+    "nav3": "Respect all users. No harassment, bullying, or discrimination.",
+    "nav4": "Content you post must be lawful, non-offensive, and free of malware.",
+    "nav5": "Do not impersonate others or misrepresent your affiliation.",
+    "nav6": "Protect your login credentials; do not share them with others.",
+    "nav7": "Report any security vulnerabilities to our support team.",
+    "nav8": "Comply with all local and international laws applicable to your use of the app.",
+    "nav9": "Do not use the app for commercial purposes without our permission.",
+    "nav10": "Avoid posting spam, including unsolicited promotions or advertisements.",
+    "nav11": "Do not collect or harvest personal data from other users.",
+    "nav12": "Engage in no activities that disrupt the service or its users.",
+    "nav13": "WEBSITE",
+    "nav14": "STORE",
+    "nav15": "CONTACT US",
+  },
+  fr: {
+    "nav1": "Conditions Générales",
+    "nav2": "Comportement et Obligations des Utilisateurs",
+    "nav3": "Respectez tous les utilisateurs. Pas de harcèlement, intimidation ou discrimination.",
+    "nav4": "Le contenu que vous publiez doit être légal, non offensant et exempt de logiciels malveillants.",
+    "nav5": "Ne vous faites pas passer pour quelqu'un d'autre ou ne falsifiez pas votre affiliation.",
+    "nav6": "Protégez vos identifiants de connexion ; ne les partagez pas avec d'autres.",
+    "nav7": "Signalez toute vulnérabilité de sécurité à notre équipe de support.",
+    "nav8": "Respectez toutes les lois locales et internationales applicables à l'utilisation de l'application.",
+    "nav9": "N'utilisez pas l'application à des fins commerciales sans notre autorisation.",
+    "nav10": "Évitez de publier des spams, y compris des promotions ou publicités non sollicitées.",
+    "nav11": "Ne collectez ni ne récoltez les données personnelles d'autres utilisateurs.",
+    "nav12": "Ne participez à aucune activité perturbant le service ou ses utilisateurs.",
+    "nav13": "SITE WEB",
+    "nav14": "BOUTIQUE",
+    "nav15": "CONTACTEZ-NOUS",
+  }
+};
+    
+      </script>
 </head>
 
 <body class="sub_page">
@@ -54,14 +123,14 @@
             <div id="myNav" class="overlay">
               <div class="overlay-content">
                 <a href="https://locarodix.com">
-                  <i class="fas fa-globe"></i> <u>WEBSITE</u> <i class="fas fa-globe"></i>
+                  <i class="fas fa-globe"></i> <u data-i18n="nav13">WEBSITE</u> <i class="fas fa-globe"></i>
                 </a>
                 <br>
                 <a href="">
-                  <i class="fas fa-store"></i> <u>STORE</u> <i class="fas fa-store"></i>
+                  <i class="fas fa-store"></i> <u data-i18n="nav14">STORE</u> <i class="fas fa-store"></i>
                 </a>
                 <br>
-                <a href="contact.html">CONTACT US</a>
+                <a href="contact.html" data-i18n="nav15">CONTACT US</a>
               </div>
             </div>
           </div>
@@ -75,7 +144,7 @@
   <section class="policy_section layout_padding2 layout_margin">
     <div class="container">
       <div class="heading_container">
-        <h2>
+        <h2 data-i18n="nav1">
           Terms and Conditions
         </h2>
       </div>
@@ -84,18 +153,18 @@
       <br>
       <br>
       <div class="content_container">
-        <h3>User Conduct and Obligations</h3>
+        <h3 data-i18n="nav2">User Conduct and Obligations</h3>
         <ul>
-          <li>Respect all users. No harassment, bullying, or discrimination.</li>
-          <li>Content you post must be lawful, non-offensive, and free of malware.</li>
-          <li>Do not impersonate others or misrepresent your affiliation.</li>
-          <li>Protect your login credentials; do not share them with others.</li>
-          <li>Report any security vulnerabilities to our support team.</li>
-          <li>Comply with all local and international laws applicable to your use of the app.</li>
-          <li>Do not use the app for commercial purposes without our permission.</li>
-          <li>Avoid posting spam, including unsolicited promotions or advertisements.</li>
-          <li>Do not collect or harvest personal data from other users.</li>
-          <li>Engage in no activities that disrupt the service or its users.</li>
+          <li data-i18n="nav3">Respect all users. No harassment, bullying, or discrimination.</li>
+          <li data-i18n="nav4">Content you post must be lawful, non-offensive, and free of malware.</li>
+          <li data-i18n="nav5">Do not impersonate others or misrepresent your affiliation.</li>
+          <li data-i18n="nav6">Protect your login credentials; do not share them with others.</li>
+          <li data-i18n="nav7">Report any security vulnerabilities to our support team.</li>
+          <li data-i18n="nav8">Comply with all local and international laws applicable to your use of the app.</li>
+          <li data-i18n="nav9">Do not use the app for commercial purposes without our permission.</li>
+          <li data-i18n="nav10">Avoid posting spam, including unsolicited promotions or advertisements.</li>
+          <li data-i18n="nav11">Do not collect or harvest personal data from other users.</li>
+          <li data-i18n="nav12">Engage in no activities that disrupt the service or its users.</li>
         </ul>
 
         <h3>Content Policy</h3>
