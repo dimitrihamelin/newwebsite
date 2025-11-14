@@ -3,3 +3,4 @@ deployment:
     - export DEPLOYPATH=/home/mghsmpbb/public_html/
     - /bin/rsync -av --delete . $DEPLOYPATH
 
+
