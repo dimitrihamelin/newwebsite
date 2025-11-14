@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="keywords" content="Locarodix Project">
+  <meta name="description" content="Discover it!">
+  <meta name="author" content="By Axel, Dimitri, Steven and Chaun">
+  
+  <!-- Favicon for tabs -->
+  <link rel="icon" type="image/png" sizes="512x512" href="/images/Logo.png">
+
+<!-- Meta pour un aperçu enrichi sur Discord, Twitter et Messages -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="🌟 Locarodix : Créé par notre équipe, pour transformer vos idées en réalité !">
+<meta property="og:description" content="Discover it!">
+<meta property="og:image" content="https://locarodix.com/images/Logo.png">
+<meta property="og:url" content="https://locarodix.com">
+<meta property="og:site_name" content="Locarodix">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="🌟 Locarodix : L'application innovante façonnée par notre équipe pour vous !">
+<meta name="twitter:description" content="Discover it!">
+<meta name="twitter:image" content="https://locarodix.com/images/Logo.png">
+<meta name="twitter:url" content="https://locarodix.com">
+<meta name="twitter:site" content="@Locarodix"> <!-- Remplacez par votre handle Twitter -->
+<meta name="twitter:creator" content="@Locarodix"> <!-- Remplacez par votre handle Twitter -->
+
+
+  <title> Locarodix </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <script>
+    const translations = {
+      en: {
+        "hero.title": "Welcome to <br> Locarodix",
+        "hero.description": "Locarodix is your gateway to innovation. From the StarMe app, a dynamic social networking platform, to cutting-edge research initiatives, we are shaping the future with creativity and purpose.",
+
+        "hero.title2": "StarMe <br> Application",
+        "hero.description2": "Experience a unique social network that rewards your engagement and fosters meaningful connections. Share your passions, explore creative content, and support the community.",
+
+        "hero.title3": "Research <br> & Solve",
+        "hero.description3": "Join our journey to address complex global challenges, including revolutionary advancements in technology and innovative solutions for the future.",
+
+        "hero.title4": "What is <span>Locarodix ?</span>",
+        "hero.description4": "Locarodix is an innovative project founded by the Team Locarodix, aimed at developing cutting-edge technological solutions and applications. One of the notable products developed by Locarodix is the 'Star-Me' mobile application, which focuses on creating a dynamic social networking experience by incorporating unique features such as a points system to reward positive interactions and engagement.",
+
+        "hero.title5": "Star-ME APP",
+        "hero.description5": "'Star-Me' is an innovative mobile application developed by Locarodix Team, designed to create a dynamic and rewarding social networking experience. The app stands out with its unique points system, where users earn points for positive interactions and engaging with content they love. This system encourages a supportive community where inspiring moments are shared, and users can connect with each other while supporting causes they care about.",
+
+        "hero.download": "Download Here",
+
+        "hero.shop": "Shop",
+        "hero.description6": "'Shop-N-Save' is an innovative retail concept developed by the Locarodix Team, designed to offer a dynamic and rewarding shopping experience. The store stands out with its unique points system, where customers earn points for every purchase made and for their loyalty to the brand. This system encourages a community of engaged shoppers where inspiring shopping moments are shared, and customers can connect while supporting causes they care about. Coming soon !",
+        "hero.description7": "Go to the Shop",
+
+        "hero.description8": "Research",
+        "hero.description9": "'Research-N-Solve' is a groundbreaking initiative by the Locarodix Team, dedicated to tackling some of the most challenging millennium problems, including the famous P = NP question. Our mission is to delve into these complex issues, aiming to uncover solutions that could revolutionize the field of computer science. We also focus on decoding internal FECT codes, pushing the boundaries of current understanding and technology. Join us on this intellectual journey !",
+      
+        "hero.description10": "Read More",
+
+        "hero.description11": "Our <span>Project</span>",
+        "hero.description12": "Locarodix, the company behind StarMe, is expanding and aims to open offices in the United States soon. This ambitious project will enable us to further develop the infrastructure of StarMe, including servers powered by solar panels for a more sustainable and environmentally friendly approach. StarMe is an innovative platform that redefines online social interactions. It empowers everyone to share their passions, ideas, and talents with a dynamic and supportive community. With modern features like live streaming, multimedia sharing, and a unique discovery space, StarMe fosters creativity and authentic connections. Our mission is to create an inclusive social network where everyone can shine in their own way while connecting with like-minded individuals. We strive to deliver a seamless and engaging user experience, with the gradual integration of financial tools to support creators and allow them to monetize their content effortlessly. Join StarMe and become a star in a universe of infinite possibilities!",
+        
+        "hero.description13": "We Are Locarodix",
+        "hero.description14": "At Locarodix, we are driven by a single vision: to create, inspire, and innovate as one unstoppable team. Together, we challenge limits, embrace creativity, and turn dreams into reality. We believe in the power of collaboration. Each challenge we face is an opportunity to grow, and every idea contributes to something bigger than ourselves. Our passion fuels progress, and our commitment drives success. Locarodix is more than a name; it’s a spirit of determination and boldness. Here, we don’t just follow trends—we set them. Every step forward is a leap toward excellence, and every project is a testament to our dedication. Join us on this journey of purpose and progress. Together, we’re not just building solutions—we’re shaping the future.",
+      
+        "hero.description15": "The<span> Future</span>",
+
+        "hero.description16": "Meet the <span>Locarodix Team</span>",
+
+        "hero.description17": "A Bold Tech Vision",
+        "hero.description18": "The Locarodix team is driven by a bold vision: to revolutionize the way people interact with technology. Every line of code we write is a step toward a smarter, more connected world.",
+      
+        "hero.description19": "Expert Developers",
+        "hero.description20" : "Our team consists of highly skilled software engineers, UI/UX designers, and project managers. Together, we craft seamless, reliable, and cutting-edge digital solutions for our users.",
+      
+        "hero.description21": "A Collaborative Spirit",
+        "hero.description22": "Collaboration is the backbone of Locarodix. We foster a culture of innovation, where team members share ideas, solve challenges, and celebrate successes together.",
+      
+        "hero.description23": "Innovation First",
+        "hero.description24" : "At Locarodix, innovation is at the core of everything we do. From developing advanced algorithms to ensuring robust backend systems, we continually push the boundaries of what's possible.",
+     
+        "nav1":"Home",
+        "nav2":"Team",
+        "nav3":"StarMe App",
+        "nav4":"Store",
+
+        "hero.description25": "Our <span> Team</span>",
+
+        "hero.description26": "He is an entrepreneur and visionary founder of Locarodix. He created StarMe, an innovative mobile app designed to foster positive social interactions. The app encourages users to earn points by engaging with content, sharing inspiring moments, and supporting meaningful causes, all within a supportive online community.",
+        "hero.description27": "Axel has been passionate about augmented reality from a young age. As an active member of the Unity community, he dedicates much of his free time to developing innovative immersive experiences. Axel focuses particularly on pushing technological boundaries to create next-generation augmented reality solutions.",
+        "hero.description28": "Olivier Suelves is the co-president of T0MIKE Records, an independent music studio. He plays a key role in overseeing studio operations, managing artist relations, and driving the studio's growth in the competitive music industry.",
+        "hero.description29": "He is the founder of RedProjet is a visionary entrepreneur dedicated to innovation in digital platforms, gaming communities, and hosting solutions. Known for projects like CubexLand and CyberSpaceHosting, they focus on creating immersive experiences and fostering vibrant online communities.",
+      
+        "hero.description30": "Address",
+        "hero.description31": "Information",
+        "hero.description32": "Links",
+
+        "hero.description33":"Discover StarMe, the innovative social app that combines creativity and finance. Share your ideas, connect with others, and explore a world of digital possibilities.",
+
+        "nav20":"Home",
+        "nav21":"Team",
+        "hero.description40":"Be resilient.",
+        "hero.description41":"D'ont miss the news",
+
+      },
+      fr: {
+        "hero.title": "Bienvenue chez <br> Locarodix",
+        "hero.description": "Locarodix est votre passerelle vers l'innovation. De l'application StarMe, une plateforme de réseau social dynamique, à des initiatives de recherche de pointe, nous façonnons l'avenir avec créativité et détermination.",
+
+        "hero.title2": "L'application <br> StarMe",
+        "hero.description2": "Découvrez un réseau social unique qui récompense votre engagement et favorise des connexions significatives. Partagez vos passions, explorez des contenus créatifs et soutenez la communauté.",
+        
+        "hero.title3": "Recherche <br> & Résolution",
+        "hero.description3": "Rejoignez notre voyage pour relever des défis mondiaux complexes, y compris des avancées révolutionnaires en technologie et des solutions innovantes pour l'avenir et permettre un fondement propre.",
+
+        "hero.title4": "Qu'est-ce <span>Locarodix ?</span>",
+        "hero.description4": "Locarodix est un projet innovant fondé par l'équipe Locarodix, visant à développer des solutions technologiques et des applications à la pointe de l'innovation. L'un des produits phares développés par Locarodix est l'application mobile 'Star-Me', qui se concentre sur la création d'une expérience de réseau social dynamique en intégrant des fonctionnalités uniques, telles qu'un système de points pour récompenser les interactions positives et l'engagement des utilisateurs.",
+        
+        "hero.title5": "Star-ME APP",
+        "hero.description5": "'Star-Me' est une application mobile innovante développée par l’équipe Locarodix, conçue pour offrir une expérience de réseau social dynamique et gratifiante. L’application se distingue par son système de points unique, grâce auquel les utilisateurs gagnent des points en interagissant de manière positive et en s’engageant avec les contenus qu’ils apprécient. Ce système favorise une communauté solidaire, où les moments inspirants sont partagés et où les utilisateurs peuvent se connecter les uns aux autres tout en soutenant les causes qui leur tiennent à cœur.",
+      
+        "hero.download": "Télécharger ici",
+
+        "hero.shop": "Boutique",
+        "hero.description6": "'Shop-N-Save' est un concept de vente au détail innovant développé par l’équipe Locarodix, conçu pour offrir une expérience d’achat dynamique et gratifiante. Le magasin se distingue par son système de points unique, où les clients accumulent des points à chaque achat ainsi que grâce à leur fidélité à la marque. Ce système favorise une communauté de consommateurs engagés, où des moments d’achat inspirants sont partagés et où les clients peuvent se connecter tout en soutenant les causes qui leur tiennent à cœur. Bientôt disponible !",
+        "hero.description7": "Aller au magasin",
+
+        "hero.description8": "Recherche",
+        "hero.description9": "'Research-N-Solve' est une initiative révolutionnaire de l’équipe Locarodix, dédiée à relever certains des plus grands défis du millénaire, dont la célèbre question P = NP. Notre mission est d’approfondir ces problématiques complexes afin de découvrir des solutions susceptibles de révolutionner le domaine de l’informatique. Nous nous attachons également à décrypter les codes internes FECT, repoussant ainsi les limites actuelles du savoir et de la technologie. Rejoignez-nous dans cette aventure intellectuelle !",
+      
+        "hero.description10": "En savoir plus",
+        
+        "hero.description11": "Notre <span>Projet</span>",
+        "hero.description12": "Locarodix, la société en cours de formation derrière StarMe, est en pleine expansion et vise bientôt l'ouverture de locaux aux États-Unis. Ce projet ambitieux nous permettra de développer davantage l'infrastructure de StarMe, en intégrant des serveurs alimentés par des panneaux solaires, pour une approche plus durable et respectueuse de l'environnement. StarMe est une plateforme innovante qui redéfinit les interactions sociales en ligne. Elle donne à chacun la possibilité de partager ses passions, ses idées et ses talents avec une communauté dynamique et bienveillante. Grâce à des fonctionnalités modernes comme le live streaming, le partage multimédia et un espace de découverte unique, StarMe encourage la créativité et les connexions authentiques. Notre mission est de créer un réseau social inclusif où chacun peut briller à sa manière, tout en connectant des personnes partageant les mêmes centres d'intérêt. Nous visons une expérience utilisateur fluide et engageante, avec une intégration progressive d'outils financiers pour soutenir les créateurs et leur permettre de monétiser leur contenu facilement. Rejoignez StarMe et devenez une étoile dans un univers de possibilités infinies !",
+        
+        "hero.description13": "Nous sommes Locarodix",
+        "hero.description14": "Chez Locarodix, nous sommes animés par une vision unique : créer, inspirer et innover en une seule et même équipe, invincible. Ensemble, nous repoussons les limites, embrassons la créativité et transformons les rêves en réalité. Nous croyons en la force de la collaboration. Chaque défi est une occasion de grandir, et chaque idée contribue à quelque chose de plus grand que nous-mêmes. Notre passion nourrit le progrès, et notre engagement garantit le succès. Locarodix est plus qu’un nom : c’est un esprit de détermination et d’audace. Ici, nous ne suivons pas les tendances, nous les créons. Chaque avancée est un pas vers l’excellence, et chaque projet témoigne de notre dévouement. Rejoignez-nous dans ce voyage de sens et de progrès. Ensemble, nous ne nous contentons pas de bâtir des solutions, nous façonnons l’avenir.",
+      
+        "hero.description15": "Notre<span> Vision</span>",
+
+        "hero.description16": "Rencontrez <span>l'équipe Locarodix</span>",
+        
+        "hero.description17": "Une vision technologique audacieuse",
+        "hero.description18": "L'équipe Locarodix est animée par une vision audacieuse : révolutionner la manière dont les gens interagissent avec la technologie. Chaque ligne de code que nous écrivons nous rapproche d'un monde plus intelligent et plus connecté.",
+      
+        "hero.description19": "Développeurs experts",
+        "hero.description20": "Notre équipe est composée d'ingénieurs logiciels hautement qualifiés, de concepteurs UI/UX et de chefs de projet. Ensemble, nous créons des solutions numériques fluides, fiables et à la pointe de la technologie pour nos utilisateurs.",      
+     
+        "hero.description21": "Un esprit collaboratif",
+        "hero.description22": "La collaboration est le pilier de Locarodix. Nous favorisons une culture d’innovation dans laquelle les membres de l’équipe partagent leurs idées, résolvent les défis et célèbrent ensemble leurs réussites.",
+     
+        "hero.description23": "L’innovation avant tout",
+        "hero.description24" : "Chez Locarodix, l’innovation est au cœur de tout ce que nous entreprenons. Qu’il s’agisse de développer des algorithmes avancés ou d’assurer la solidité de nos systèmes backend, nous repoussons sans cesse les limites du possible.",    
+      
+        "nav1":"Accueil",
+        "nav2":"Équipe",
+        "nav3":"StarMe APP",
+        "nav4":"Boutique",
+
+        "hero.description25": "Notre <span>Équipe</span>",
+
+        "hero.description26": "C’est un entrepreneur et le fondateur visionnaire de Locarodix. Il a créé StarMe, une application mobile innovante conçue pour favoriser des interactions sociales positives. L’application encourage les utilisateurs à gagner des points en interagissant avec du contenu, en partageant des moments inspirants et en soutenant des causes importantes, le tout au sein d’une communauté en ligne solidaire.",
+        "hero.description27": "Axel est passionné par la réalité augmentée depuis son plus jeune âge. Membre actif de la communauté Unity, il consacre une grande partie de son temps libre au développement d’expériences immersives novatrices. Axel se concentre tout particulièrement sur le dépassement des limites technologiques pour créer des solutions de réalité augmentée de nouvelle génération.",
+        "hero.description28": "Olivier Suelves est le co-président de T0MIKE Records, un studio de musique indépendant. Il joue un rôle clé dans la supervision des opérations du studio, la gestion des relations avec les artistes et l’impulsion de la croissance du studio au sein de l’industrie musicale concurrentielle.",
+        "hero.description29": "Il est le fondateur de RedProjet, un entrepreneur visionnaire engagé dans l’innovation des plateformes numériques, des communautés de jeu et des solutions d’hébergement. Connu pour des projets tels que CubexLand et CyberSpaceHosting, il se concentre sur la création d’expériences immersives et le développement de communautés en ligne dynamiques.",
+     
+        "hero.description30":"L'Adresse",
+        "hero.description31":"Informations",
+        "hero.description32":"Liens",
+
+        "hero.description33": "Découvrez StarMe, l’application sociale innovante qui allie créativité et finance. 🚀 Partagez vos idées, connectez-vous avec d’autres personnes et explorez un monde de possibilités numériques.",
+      
+        "nav20":"Accueil",
+        "nav21":"Équipe",
+
+        "hero.description40": "Soyez là",
+        "hero.description41":"Ne manquez pas les actualités.",
+      }
+      };
+  </script>
+
+</head>
+
+<body>
+
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="images/hero-bg.png" alt="">
+      </div>
+    </div>
+
+<!-- header section starts -->
+<header class="header_section">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg custom_nav-container">
+      <a class="navbar-brand" href="index.html">
+        <span>
+          Locarodix
+        </span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class=""></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html" data-i18n="nav1">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="team.html" data-i18n="nav2">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://locarodix.com/starme/index.html" target="_blank" data-i18n="nav3">StarMe App</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://starme.space" target="_blank" data-i18n="nav4">Store</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- end header section -->
+
+<!-- slider section -->
+<section class="slider_section">
+  <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="detail-box">
+                <h1 data-i18n="hero.title">
+                  Welcome to <br>
+                  Locarodix
+                </h1>
+                <p data-i18n="hero.description">
+                  Locarodix is your gateway to innovation. From the StarMe app, a dynamic social networking platform, to cutting-edge research initiatives, we are shaping the future with creativity and purpose.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="detail-box">
+                <h1 data-i18n="hero.title2">
+                  StarMe <br>
+                  Application
+                </h1>
+                <p data-i18n="hero.description2">
+                  Experience a unique social network that rewards your engagement and fosters meaningful connections. Share your passions, explore creative content, and support the community.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="detail-box">
+                <h1 data-i18n="hero.title3">
+                  Research <br>
+                  & Solve
+                </h1>
+                <p data-i18n="hero.description3">
+                  Join our journey to address complex global challenges, including revolutionary advancements in technology and innovative solutions for the future.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ol class="carousel-indicators">
+      <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+      <li data-target="#customCarousel1" data-slide-to="1"></li>
+      <li data-target="#customCarousel1" data-slide-to="2"></li>
+    </ol>
+  </div>
+</section>
+<!-- end slider section -->
+  </div>
+
+
+  <!-- service section -->
+
+  <section class="service_section layout_padding">
+    <div class="service_container">
+      <div class="container ">
+        <div class="heading_container heading_center">
+          <h2 data-i18n="hero.title4">
+            What is <span>Locarodix ?</span>
+          </h2>
+          <br>
+          <p data-i18n="hero.description4">
+            Locarodix is an innovative project founded by the Team Locarodix, aimed at developing cutting-edge technological solutions and applications. One of the notable products developed by Locarodix is the "Star-Me" mobile application, which focuses on creating a dynamic social networking experience by incorporating unique features such as a points system to reward positive interactions and engagement.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/starmeicon.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5 data-i18n="hero.title5">
+                  Star-ME APP
+                </h5>
+                <p data-i18n="hero.description5">
+                  "Star-Me" is an innovative mobile application developed by Locarodix Team, designed to create a dynamic and rewarding social networking experience. The app stands out with its unique points system, where users earn points for positive interactions and engaging with content they love. This system encourages a supportive community where inspiring moments are shared, and users can connect with each other while supporting causes they care about.
+                </p>
+                <a href="https://apps.apple.com/fr/app/starmee/id6476231299?l=en-GB" target="_blank" data-i18n="hero.download">
+                  Download Here
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/shop2.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5 data-i18n="hero.shop">
+                  Shop
+                </h5>
+                <p data-i18n="hero.description6"> 
+                  "Shop-N-Save" is an innovative retail concept developed by the Locarodix Team, designed to offer a dynamic and rewarding shopping experience. The store stands out with its unique points system, where customers earn points for every purchase made and for their loyalty to the brand. This system encourages a community of engaged shoppers where inspiring shopping moments are shared, and customers can connect while supporting causes they care about. Coming soon !                </p>
+                <a href="https://starme.space" target="_blank" data-i18n="hero.description7">
+                  Go to the Shop
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/research.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5 data-i18n="hero.description8">
+                  Research
+                </h5>
+                <p data-i18n="hero.description9">
+                  "Research-N-Solve" is a groundbreaking initiative by the Locarodix Team, dedicated to tackling some of the most challenging millennium problems, including the famous P = NP question. Our mission is to delve into these complex issues, aiming to uncover solutions that could revolutionize the field of computer science. We also focus on decoding internal FECT codes, pushing the boundaries of current understanding and technology. Join us on this intellectual journey !
+                </p>
+                <a href="" data-i18n="hero.description10">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end service section -->
+
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container  ">
+      <div class="heading_container heading_center">
+        <h2 data-i18n="hero.description11">
+          Our <span>Project</span>
+        </h2>
+        <br>
+        <p data-i18n="hero.description12">
+          StarMe is an innovative platform that redefines online social interactions. It empowers users to share their passions, ideas, and talents with a dynamic and supportive community. With modern features like live streaming, multimedia sharing, and a unique discovery space, StarMe fosters creativity and authentic connections.
+
+          The mission of StarMe is to create an inclusive social network where everyone can shine in their own way while connecting with like-minded individuals. We aim to provide a seamless and engaging user experience, gradually integrating financial tools to support creators and enable them to monetize their content effortlessly.
+          
+          Join StarMe and become a star in a universe of infinite possibilities!        
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="images/dimitri2.JPG" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h3 data-i18n="hero.description13">
+              We Are Locarodix
+            </h3>
+            <p data-i18n="hero.description14">
+              At Locarodix, we are driven by a single vision: to create, inspire, and innovate as one unstoppable team. Together, we challenge limits, embrace creativity, and turn dreams into reality. 
+
+              We believe in the power of collaboration. Each challenge we face is an opportunity to grow, and every idea contributes to something bigger than ourselves. Our passion fuels progress, and our commitment drives success.
+              
+              Locarodix is more than a name; it’s a spirit of determination and boldness. Here, we don’t just follow trends—we set them. Every step forward is a leap toward excellence, and every project is a testament to our dedication.
+              
+              Join us on this journey of purpose and progress. Together, we’re not just building solutions—we’re shaping the future. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- video section -->
+  <br>
+
+  <style>
+    .video_container {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  
+    .responsive_video {
+      width: 100%;
+      height: 300px; /* Hauteur par défaut pour les mobiles */
+    }
+  
+    @media screen and (min-width: 768px) {
+      .responsive_video {
+        height: 360px; /* Hauteur légèrement augmentée pour les tablettes */
+        width: 900px;
+      }
+    }
+  
+    @media screen and (min-width: 1024px) {
+      .responsive_video {
+        width: 800px; /* Largeur pour les écrans ordinateurs */
+        height: 450px; /* Hauteur adaptée */
+      }
+    }
+  </style>
+  
+
+  
+  <br>
+  <div class="heading_container heading_center">
+    <h2 class="" data-i18n="hero.description15">
+      The<span> Future</span>
+    </h2>
+
+
+    <br>
+    <br>
+
+    <div class="video_container">
+      <iframe 
+        class="responsive_video"
+        src="https://www.youtube.com/embed/3NGJLiHD0rY" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+    
+    
+  </div>
+
+
+  <!-- why section -->
+
+  <section class="why_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2 data-i18n="hero.description16">
+          Meet the <span>Locarodix Team</span>
+        </h2>
+      </div>
+      <div class="why_container">
+        <div class="box">
+          <div class="detail-box">
+            <h5 data-i18n="hero.description17">
+              A Bold Tech Vision
+            </h5>
+            <p data-i18n="hero.description18">
+              The Locarodix team is driven by a bold vision: to revolutionize the way people interact with technology. Every line of code we write is a step toward a smarter, more connected world.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="detail-box">
+            <h5 data-i18n="hero.description19">
+              Expert Developers
+            </h5>
+            <p data-i18n="hero.description20">
+              Our team consists of highly skilled software engineers, UI/UX designers, and project managers. Together, we craft seamless, reliable, and cutting-edge digital solutions for our users.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="detail-box">
+            <h5 data-i18n="hero.description21">
+              A Collaborative Spirit
+            </h5>
+            <p data-i18n="hero.description22">
+              Collaboration is the backbone of Locarodix. We foster a culture of innovation, where team members share ideas, solve challenges, and celebrate successes together.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="detail-box">
+            <h5 data-i18n="hero.description23">
+              Innovation First
+            </h5>
+            <p data-i18n="hero.description24">
+              At Locarodix, innovation is at the core of everything we do. From developing advanced algorithms to ensuring robust backend systems, we continually push the boundaries of what's possible.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end why section -->
+
+  <!-- team section -->
+  <section class="team_section layout_padding">
+    <div class="container-fluid">
+      <div class="heading_container heading_center">
+        <h2 class="" data-i18n="hero.description25">
+          Our <span> Team</span>
+        </h2>
+      </div>
+
+      <div class="team_container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/Unknown.jpeg" class="img1" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Dimitri Hamelin
+                </h5>
+                <p data-i18n="hero.description26">
+                  He is an entrepreneur and visionary founder of Locarodix. He created StarMe, an innovative mobile app designed to foster positive social interactions. The app encourages users to earn points by engaging with content, sharing inspiring moments, and supporting meaningful causes, all within a supportive online community.
+                </p>
+              </div>
+              <div class="social_box">
+                <a href="https://www.linkedin.com/in/dimitri-hamelin-15b854256/?originalSubdomain=fr" target="_blank">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/dimitri.hamelin/?hl=fr" target="_blank">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/axel.webp" class="img1" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Axel Robe
+                </h5>
+                <p data-i18n="hero.description27">
+                  Axel has been passionate about augmented reality from a young age. As an active member of the Unity community, he dedicates much of his free time to developing innovative immersive experiences. Axel focuses particularly on pushing technological boundaries to create next-generation augmented reality solutions.
+                </p>
+              </div>
+              <div class="social_box">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="box ">
+              <div class="img-box">
+                <img src="/images/axel.webp" class="img1" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Olivier Suelves OTT
+                </h5>
+                <p data-i18n="hero.description28">
+                  Olivier Suelves is the co-president of T0MIKE Records, an independent music studio. He plays a key role in overseeing studio operations, managing artist relations, and driving the studio's growth in the competitive music industry.
+                </p>
+              </div>
+              <div class="social_box">
+                <a href="https://www.linkedin.com/in/olivier-suelves-ott-77a35b25a/" target="_blank">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/steven.jpeg" class="img1" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Steven Petiteau
+                </h5>
+                <p data-i18n="hero.description29">
+                  He is the founder of RedProjet is a visionary entrepreneur dedicated to innovation in digital platforms, gaming communities, and hosting solutions. Known for projects like CubexLand and CyberSpaceHosting, they focus on creating immersive experiences and fostering vibrant online communities.
+                </p>
+              </div>
+              <div class="social_box">
+                <a href="https://www.linkedin.com/in/steven-petiteau-6b628a14b/">
+                  <i class="fa fa-linkedin" aria-hidden="true" target="_blank"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end team section -->
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_contact">
+            <h4 data-i18n="hero.description30">
+              Address
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Paris
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call (+33) 7 44 90 95 90
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  locarodix@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="info_social">
+            <a href="https://www.facebook.com/people/StarMe/61557136050099/">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://x.com/locarodix">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/92888943/admin/dashboard/">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/locarodix/">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_detail">
+            <h4 data-i18n="hero.description31">
+              Info
+            </h4>
+            <p data-i18n="hero.description33">
+              Discover StarMe, the innovative social app that combines creativity and finance. 🚀 Share your ideas, connect with others, and explore a world of digital possibilities. 🌟            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2 mx-auto info_col">
+          <div class="info_link_box">
+            <h4 data-i18n="hero.description32">
+              Links
+            </h4>
+            <div class="info_links">
+              <a class="active" href="index.html" data-i18n="nav20">
+                Home
+              </a>
+              <a class="" href="team.html" data-i18n="nav21">
+                Team
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info_col ">
+          <h4 data-i18n="hero.description40">
+            Be here
+          </h4>
+
+          <h6 data-i18n="hero.description41">
+            D'ont miss the news
+          </h6>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Détecter la langue du navigateur
+    const userLang = navigator.language.startsWith('fr') ? 'fr' : 'en';
+  
+    // Appliquer les traductions à la page
+    function applyTranslations(lang) {
+      document.querySelectorAll("[data-i18n]").forEach(element => {
+        const key = element.getAttribute("data-i18n");
+        if (translations[lang][key]) {
+          element.innerHTML = translations[lang][key];
+        }
+      });
+    }
+  
+    // Charger les traductions au démarrage
+    document.addEventListener("DOMContentLoaded", () => {
+      applyTranslations(userLang);
+    });
+  </script>
+
+
+  <!-- end info section -->
+
+  <!-- jQery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+</body>
+
+
+
+</html>

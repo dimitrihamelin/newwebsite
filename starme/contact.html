@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+<!-- Meta pour un aperçu enrichi sur Discord, Twitter et Messages -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="🚀 Découvrez StarMe : L'app révolutionnaire que tout le monde attend !">
+<meta property="og:description" content="Discover it!">
+<meta property="og:image" content="https://locarodix.com/images/starmeicon.png">
+<meta property="og:url" content="https://locarodix.com">
+<meta property="og:site_name" content="Locarodix">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="🚀 Locarodix : L'app qui va révolutionner votre quotidien !">
+<meta name="twitter:description" content="Discover it!">
+<meta name="twitter:image" content="https://locarodix.com/images/.png">
+<meta name="twitter:url" content="https://locarodix.com">
+<meta name="twitter:site" content="@Locarodix"> <!-- Remplacez par votre handle Twitter -->
+<meta name="twitter:creator" content="@Locarodix"> <!-- Remplacez par votre handle Twitter -->
+  
+  <!-- Favicon for tabs -->
+  <link rel="icon" type="image/png" sizes="512x512" href="/images/starme.png">
+
+  
+  <!-- Favicon for tabs -->
+  <link rel="icon" type="image/png" sizes="512x512" href="/images/starme.png">
+
+  <title>Locarodix Star-ME APP</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <script>
+    // Détecter la langue du navigateur
+    const userLang = navigator.language.startsWith('fr') ? 'fr' : 'en';
+  
+    // Appliquer les traductions à la page
+    function applyTranslations(lang) {
+      document.querySelectorAll("[data-i18n]").forEach(element => {
+        const key = element.getAttribute("data-i18n");
+        if (translations[lang] && translations[lang][key]) {
+          element.innerHTML = translations[lang][key];
+        }
+      });
+    }
+  
+    // Charger les traductions au démarrage
+    document.addEventListener("DOMContentLoaded", () => {
+      applyTranslations(userLang);
+    });
+  </script>  
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width");
+      document
+        .querySelector(".custom_menu-btn")
+        .classList.toggle("menu_btn-style");
+    }
+  </script>
+
+  <script>
+const translations = {
+  en: {
+    "nav1": "Help",
+    "nav2": "Contacts",
+    "nav3": "Email : locarodix@gmail.com / Phone : (+33) 7 52 60 33 60",
+    "nav100" : "Back"
+    },
+  fr: {
+    "nav1": "Aides",
+    "nav2": "Contactez-nous",
+    "nav3": "Email : locarodix@gmail.com / Téléphone : (+33) 7 52 60 33 60",
+    "nav100" : "Retour"
+  }
+};
+    
+      </script>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Locarodix Star-ME APP
+            </span>
+          </a>
+
+          <div class="navbar-collapse" id="">
+            <div class="custom_menu-btn">
+              <button onclick="openNav()">
+                <span class="s-1"> </span>
+                <span class="s-2"> </span>
+                <span class="s-3"> </span>
+              </button>
+            </div>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="https://locarodix.com">
+                  <i class="fas fa-globe"></i> <u data-i18n="nav13">WEBSITE</u> <i class="fas fa-globe"></i>
+                </a>
+                <br>
+                <a href="">
+                  <i class="fas fa-store"></i> <u data-i18n="nav14">STORE</u> <i class="fas fa-store"></i>
+                </a>
+                <br>
+                <a href="help.html" data-i18n="nav15">CONTACT US</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- policy section -->
+  <section class="policy_section layout_padding2 layout_margin">
+    <div class="container">
+      <div class="heading_container">
+        <h2 data-i18n="nav1">
+          Help
+        </h2>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="content_container">
+        <h3 data-i18n="nav2">Contacts</h3>
+        <ul>
+          <li data-i18n="nav3">Email : locarodix@gmail.com / Phone : +33 7 52 60 33 60.</li>
+    </div>
+  </section>
+  <!-- end policy section -->
+
+  <div class="back_button_container" style="text-align: center; margin: 20px 0;">
+    <a href="https://locarodix.com/starme/index.html" style="font-size: 24px; padding: 10px 20px; background-color: blueviolet; color: white; text-decoration: none; border-radius: 5px;" data-i18n="nav100">Back</a>
+  </div>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!-- footer section -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width");
+      document
+        .querySelector(".custom_menu-btn")
+        .classList.toggle("menu_btn-style");
+    }
+  </script>
+</body>
+
+</html>

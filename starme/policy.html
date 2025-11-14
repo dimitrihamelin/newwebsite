@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+<!-- Meta pour un aperçu enrichi sur Discord, Twitter et Messages -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="🚀 Découvrez StarMe : L'app révolutionnaire que tout le monde attend !">
+<meta property="og:description" content="Discover it!">
+<meta property="og:image" content="https://locarodix.com/images/starmeicon.png">
+<meta property="og:url" content="https://locarodix.com">
+<meta property="og:site_name" content="Locarodix">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="🚀 StarMe : L'app qui va révolutionner votre quotidien !">
+<meta name="twitter:description" content="Discover it!">
+<meta name="twitter:image" content="https://locarodix.com/images/.png">
+<meta name="twitter:url" content="https://locarodix.com">
+<meta name="twitter:site" content="@Locarodix"> <!-- Remplacez par votre handle Twitter -->
+<meta name="twitter:creator" content="@Locarodix"> <!-- Remplacez par votre handle Twitter -->
+  
+  <!-- Favicon for tabs -->
+  <link rel="icon" type="image/png" sizes="512x512" href="/images/starme.png">
+
+  
+  <!-- Favicon for tabs -->
+  <link rel="icon" type="image/png" sizes="512x512" href="/images/starme.png">
+
+  <title>Locarodix Star-ME APP</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <script>
+    // Détecter la langue du navigateur
+    const userLang = navigator.language.startsWith('fr') ? 'fr' : 'en';
+  
+    // Appliquer les traductions à la page
+    function applyTranslations(lang) {
+      document.querySelectorAll("[data-i18n]").forEach(element => {
+        const key = element.getAttribute("data-i18n");
+        if (translations[lang] && translations[lang][key]) {
+          element.innerHTML = translations[lang][key];
+        }
+      });
+    }
+  
+    // Charger les traductions au démarrage
+    document.addEventListener("DOMContentLoaded", () => {
+      applyTranslations(userLang);
+    });
+  </script>  
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width");
+      document
+        .querySelector(".custom_menu-btn")
+        .classList.toggle("menu_btn-style");
+    }
+  </script>
+
+  <script>
+const translations = {
+  en: {
+    "nav1": "Terms and Conditions",
+    "nav2": "User Conduct and Obligations",
+    "nav3": "Respect all users. No harassment, bullying, or discrimination.",
+    "nav4": "Content you post must be lawful, non-offensive, and free of malware.",
+    "nav5": "Do not impersonate others or misrepresent your affiliation.",
+    "nav6": "Protect your login credentials; do not share them with others.",
+    "nav7": "Report any security vulnerabilities to our support team.",
+    "nav8": "Comply with all local and international laws applicable to your use of the app.",
+    "nav9": "Do not use the app for commercial purposes without our permission.",
+    "nav10": "Avoid posting spam, including unsolicited promotions or advertisements.",
+    "nav11": "Do not collect or harvest personal data from other users.",
+    "nav12": "Engage in no activities that disrupt the service or its users.",
+    "nav13": "WEBSITE",
+    "nav14": "STORE",
+    "nav15": "CONTACT US",
+    "nav20": "Content Policy",
+    "nav21": "You retain rights to your content, but grant us a license to use it.",
+    "nav22": "Do not post content that infringes on others' intellectual property rights.",
+    "nav23": "No posting of false information or fake news.",
+    "nav24": "Avoid content that could be considered obscene or pornographic.",
+    "nav25": "Do not promote violence or criminal activities.",
+    "nav26": "Intellectual property complaints must follow our formal process.",
+    "nav27": "Service Use and Limitations",
+    "nav28": "We reserve the right to modify or discontinue any feature at our discretion.",
+    "nav29": "We aim to maintain the service but cannot guarantee uninterrupted access.",
+    "nav30": "Use of the app is at your own risk; we provide it 'as is' without warranty.",
+    "nav31": "We reserve the right to remove any content that violates these terms.",
+    "nav32": "Your access to the service may be limited for maintenance or updates.",
+    "nav33": "Legal and Financial Terms",
+    "nav34": "We are not liable for any content posted by users.",
+    "nav35": "Any legal disputes will be settled in accordance with France.",
+    "nav36": "You agree to indemnify us against any claims related to your use of the app.",
+    "nav37": "Our liability is limited - we are not liable for indirect damages.",
+    "nav38": "Subscriptions and purchases are subject to our refund policy.",
+    "nav39": "Privacy and Data Protection",
+    "nav40": "We can see your data but not your password as described in our Privacy Policy.",
+    "nav41": "You consent to the collection and use of personal data for app functionality.",
+    "nav42": "We implement security measures to protect your data, but no system is infallible.",
+    "nav43": "You have rights to access, modify, and delete your personal data.",
+    "nav44": "Additional Provisions",
+    "nav45": "These terms constitute the entire agreement between you and us.",
+    "nav46": "If any term is found to be unenforceable, the remainder will still apply.",
+    "nav47": "We may transfer our rights under these terms without restriction.",
+    "nav48": "Your use of third-party services within the app is subject to their terms.",
+    "nav49": "We may update these terms at any time; continued use constitutes acceptance.",
+    "nav50": "You cannot assign your rights under these terms without our consent.",
+    "nav51": "Any notices required will be given in the app or via email.",
+    "nav52": "We are not responsible for delays or failures in performance resulting from factors beyond our control.",
+    "nav53": "Feedback and suggestions become our property without any obligation to you.",
+    "nav54": "By using this app, you acknowledge that you have read, understood, and agreed to these terms.",
+    "nav55": "Newly Added Rules",
+    "nav56": "Respect the privacy of other users and do not share their personal information without consent.",
+    "nav57": "Do not engage in activities that may harm the reputation of our app or its community.",
+    "nav58": "Any attempt to exploit vulnerabilities in the app's code or security features is strictly prohibited.",
+    "nav59": "Do not use automated scripts or bots to interact with the app or its users.",
+    "nav60": "All communications within the app should be conducted in a civil and respectful manner.",
+    "nav61": "Do not create multiple accounts for the purpose of evading sanctions or restrictions.",
+    "nav62": "Any attempts to circumvent or violate these terms will result in immediate account suspension.",
+    "nav63": "Users must be of legal age to use the app; underage users are not permitted (only with the agreements with parents, older than 13).",
+    "nav64": "Do not share inappropriate or sensitive content, including but not limited to graphic violence or hate speech.",
+    "nav65": "Users are responsible for keeping their contact information up to date for communication purposes.",
+    "nav66": "Addons Rules",
+    "nav67": "Do not engage in any form of cheating or exploiting bugs for personal gain.",
+    "nav68": "Do not upload or share any content that contains viruses or malicious code.",
+    "nav69": "Do not create accounts with the intent to impersonate others or deceive the community.",
+    "nav70": "Users should not engage in any form of discrimination based on race, gender, religion, or sexual orientation.",
+    "nav72": "Do not promote or glorify dangerous activities such as self-harm or substance abuse.",
+    "nav73": "Do not use the app to distribute unauthorized copies of copyrighted material.",
+    "nav74": "Users should not engage in activities that violate the privacy of others, including hacking or doxxing.",
+    "nav75": "Do not engage in activities that could disrupt the normal operation of the app or its servers.",
+    "nav76": "Users should not attempt to reverse engineer, decompile, or disassemble the app.",
+    "nav77": "Do not use the app to solicit or engage in illegal activities.",
+    "nav78": "Users should not upload or share any content that is defamatory or libelous.",
+    "nav79": "Do not use the app to promote pyramid schemes or other fraudulent schemes.",
+    "nav80": "Users should not attempt to access accounts or data belonging to other users without permission.",
+    "nav81": "Do not use the app to transmit or distribute spam or unsolicited messages.",
+    "nav82": "Users should not engage in activities that could harm the integrity of the app's ratings or reviews.",
+    "nav83": "Do not share login credentials or account access with others.",
+    "nav84": "Users should not create or use third-party tools or services that interact with the app in violation of these terms.",
+    "nav85": "Do not upload or share any content that is sexually explicit or pornographic.",
+    "nav86": "Users should not engage in any form of cyberbullying or harassment.",
+    "nav87": "Do not use the app to promote or organize illegal or violent activities.",
+    "nav88": "Users should not upload or share any content that depicts graphic violence or gore.",
+    "nav89": "Do not engage in any form of unauthorized advertising or promotion within the app.",
+    "nav90": "Users should not use the app to distribute any form of hate speech or discriminatory content.",
+    "nav91": "Do not use the app to engage in any form of illegal gambling.",
+    "nav92": "Users should not engage in any form of activity that violates the rights of others, including intellectual property rights.",
+    "nav93": "Do not use the app to transmit or distribute any form of malware.",
+    "nav94": "Users should not engage in any form of activity that could harm the reputation of the app or its developers.",
+    "nav95": "Do not use the app to solicit or distribute explicit or inappropriate content.",
+    "nav96": "Users should not engage in any form of activity that violates the terms of service of third-party services integrated with the app.",
+    "nav97": "Do not use the app to promote or engage in any form of illegal or unethical behavior.",
+    "nav98": "Thank you for being a responsible member of our community. Your cooperation ensures a positive experience for all users.",
+    "nav100":"Back"
+  },
+  fr: {
+    "nav1": "Conditions Générales",
+    "nav2": "Comportement et Obligations des Utilisateurs",
+    "nav3": "Respectez tous les utilisateurs. Pas de harcèlement, intimidation ou discrimination.",
+    "nav4": "Le contenu que vous publiez doit être légal, non offensant et exempt de logiciels malveillants.",
+    "nav5": "Ne vous faites pas passer pour quelqu'un d'autre ou ne falsifiez pas votre affiliation.",
+    "nav6": "Protégez vos identifiants de connexion ; ne les partagez pas avec d'autres.",
+    "nav7": "Signalez toute vulnérabilité de sécurité à notre équipe de support.",
+    "nav8": "Respectez toutes les lois locales et internationales applicables à l'utilisation de l'application.",
+    "nav9": "N'utilisez pas l'application à des fins commerciales sans notre autorisation.",
+    "nav10": "Évitez de publier des spams, y compris des promotions ou publicités non sollicitées.",
+    "nav11": "Ne collectez ni ne récoltez les données personnelles d'autres utilisateurs.",
+    "nav12": "Ne participez à aucune activité perturbant le service ou ses utilisateurs.",
+    "nav13": "SITE WEB",
+    "nav14": "BOUTIQUE",
+    "nav15": "CONTACTEZ-NOUS",
+    "nav20": "Politique de Contenu",
+    "nav21": "Vous conservez les droits sur votre contenu, mais nous accordez une licence pour l'utiliser.",
+    "nav22": "Ne publiez pas de contenu qui enfreint les droits de propriété intellectuelle d'autrui.",
+    "nav23": "Ne publiez pas de fausses informations ou de fausses nouvelles.",
+    "nav24": "Évitez le contenu qui pourrait être considéré comme obscène ou pornographique.",
+    "nav25": "Ne faites pas la promotion de la violence ou d'activités criminelles.",
+    "nav26": "Les plaintes relatives à la propriété intellectuelle doivent suivre notre processus formel.",
+    "nav27": "Utilisation et Limitations du Service",
+    "nav28": "Nous nous réservons le droit de modifier ou de supprimer toute fonctionnalité à notre discrétion.",
+    "nav29": "Nous visons à maintenir le service, mais ne pouvons garantir un accès ininterrompu.",
+    "nav30": "L'utilisation de l'application est à vos risques; nous la fournissons 'en l'état' sans garantie.",
+    "nav31": "Nous nous réservons le droit de supprimer tout contenu qui enfreint ces conditions.",
+    "nav32": "Votre accès au service peut être limité pour des raisons de maintenance ou de mise à jour.",
+    "nav33": "Conditions Légales et Financières",
+    "nav34": "Nous ne sommes pas responsables du contenu publié par les utilisateurs.",
+    "nav35": "Tout litige juridique sera réglé conformément au droit français.",
+    "nav36": "Vous acceptez de nous indemniser contre toute réclamation liée à votre utilisation de l'application.",
+    "nav37": "Notre responsabilité est limitée - nous ne sommes pas responsables des dommages indirects.",
+    "nav38": "Les abonnements et achats sont soumis à notre politique de remboursement.",
+    "nav39": "Confidentialité et Protection des Données",
+    "nav40": "Nous pouvons voir vos données mais pas votre mot de passe, comme décrit dans notre Politique de Confidentialité.",
+    "nav41": "Vous consentez à la collecte et à l'utilisation des données personnelles pour le fonctionnement de l'application.",
+    "nav42": "Nous mettons en œuvre des mesures de sécurité pour protéger vos données, mais aucun système n'est infaillible.",
+    "nav43": "Vous avez le droit d'accéder, de modifier et de supprimer vos données personnelles.",
+    "nav44": "Dispositions Supplémentaires",
+    "nav45": "Ces conditions constituent l'intégralité de l'accord entre vous et nous.",
+    "nav46": "Si une condition est jugée inapplicable, le reste restera en vigueur.",
+    "nav47": "Nous pouvons transférer nos droits en vertu de ces conditions sans restriction.",
+    "nav48": "Votre utilisation de services tiers dans l'application est soumise à leurs conditions.",
+    "nav49": "Nous pouvons mettre à jour ces conditions à tout moment ; l'utilisation continue vaut acceptation.",
+    "nav50": "Vous ne pouvez pas céder vos droits en vertu de ces conditions sans notre consentement.",
+    "nav51": "Tout avis requis sera donné dans l'application ou par email.",
+    "nav52": "Nous ne sommes pas responsables des retards ou des échecs liés à des facteurs hors de notre contrôle.",
+    "nav53": "Les commentaires et suggestions deviennent notre propriété sans aucune obligation envers vous.",
+    "nav54": "En utilisant cette application, vous reconnaissez avoir lu, compris et accepté ces conditions.",
+    "nav55": "Règles Nouvellement Ajoutées",
+    "nav56": "Respectez la vie privée des autres utilisateurs et ne partagez pas leurs informations personnelles sans consentement.",
+    "nav57": "Ne vous engagez pas dans des activités pouvant nuire à la réputation de notre application ou de sa communauté.",
+    "nav58": "Toute tentative d'exploiter des vulnérabilités dans le code ou les fonctionnalités de sécurité de l'application est strictement interdite.",
+    "nav59": "N'utilisez pas de scripts ou de bots automatisés pour interagir avec l'application ou ses utilisateurs.",
+    "nav60": "Toutes les communications au sein de l'application doivent être effectuées de manière civile et respectueuse.",
+    "nav61": "Ne créez pas de comptes multiples pour échapper aux sanctions ou restrictions.",
+    "nav62": "Toute tentative de contournement ou de violation de ces conditions entraînera une suspension immédiate du compte.",
+    "nav63": "Les utilisateurs doivent être majeurs pour utiliser l'application ; les mineurs ne sont pas autorisés (sauf sous l'accord des parents, +13 ans).",
+    "nav64": "Ne partagez pas de contenu inapproprié ou sensible, y compris, mais sans s'y limiter, des violences graphiques ou des discours haineux.",
+    "nav65": "Les utilisateurs sont responsables de maintenir leurs informations de contact à jour pour les communications.",
+    "nav66": "Règles des Extensions",
+    "nav67": "Ne participez à aucune forme de triche ou d'exploitation de bugs à des fins personnelles.",
+    "nav68": "Ne téléchargez ni ne partagez aucun contenu contenant des virus ou des codes malveillants.",
+    "nav69": "Ne créez pas de comptes dans le but d'usurper l'identité d'autres personnes ou de tromper la communauté.",
+    "nav70": "Les utilisateurs ne doivent pas se livrer à une quelconque forme de discrimination basée sur la race, le sexe, la religion ou l'orientation sexuelle.",
+    "nav72": "Ne faites pas la promotion ou l'apologie d'activités dangereuses comme l'automutilation ou l'abus de substances.",
+    "nav73": "N'utilisez pas l'application pour distribuer des copies non autorisées de matériel protégé par des droits d'auteur.",
+    "nav74": "Les utilisateurs ne doivent pas se livrer à des activités portant atteinte à la vie privée des autres, y compris le piratage ou le doxxing.",
+    "nav75": "Ne participez pas à des activités susceptibles de perturber le fonctionnement normal de l'application ou de ses serveurs.",
+    "nav76": "Les utilisateurs ne doivent pas tenter de rétroconcevoir, décompiler ou désassembler l'application.",
+    "nav77": "N'utilisez pas l'application pour solliciter ou participer à des activités illégales.",
+    "nav78": "Les utilisateurs ne doivent pas télécharger ou partager de contenu diffamatoire ou calomnieux.",
+    "nav79": "N'utilisez pas l'application pour promouvoir des systèmes pyramidaux ou d'autres systèmes frauduleux.",
+    "nav80": "Les utilisateurs ne doivent pas tenter d'accéder aux comptes ou données appartenant à d'autres utilisateurs sans autorisation.",
+    "nav81": "N'utilisez pas l'application pour transmettre ou distribuer des spams ou des messages non sollicités.",
+    "nav82": "Les utilisateurs ne doivent pas participer à des activités susceptibles de nuire à l'intégrité des évaluations ou des avis de l'application.",
+    "nav83": "Ne partagez pas les identifiants ou l'accès à votre compte avec d'autres personnes.",
+    "nav84": "Les utilisateurs ne doivent pas créer ou utiliser des outils ou services tiers qui interagissent avec l'application en violation de ces conditions.",
+    "nav85": "Ne téléchargez ni ne partagez de contenu sexuellement explicite ou pornographique.",
+    "nav86": "Les utilisateurs ne doivent pas se livrer à des formes de cyberintimidation ou de harcèlement.",
+    "nav87": "N'utilisez pas l'application pour promouvoir ou organiser des activités illégales ou violentes.",
+    "nav88": "Les utilisateurs ne doivent pas télécharger ou partager de contenu représentant des violences graphiques ou du gore.",
+    "nav89": "Ne participez à aucune forme de publicité ou de promotion non autorisée au sein de l'application.",
+    "nav90": "Les utilisateurs ne doivent pas utiliser l'application pour diffuser des discours de haine ou du contenu discriminatoire.",
+    "nav91": "N'utilisez pas l'application pour participer à des formes de jeu illégal.",
+    "nav92": "Les utilisateurs ne doivent pas participer à des activités qui enfreignent les droits d'autrui, y compris les droits de propriété intellectuelle.",
+    "nav93": "N'utilisez pas l'application pour transmettre ou distribuer des formes de logiciels malveillants.",
+    "nav94": "Les utilisateurs ne doivent pas participer à des activités susceptibles de nuire à la réputation de l'application ou de ses développeurs.",
+    "nav95": "N'utilisez pas l'application pour solliciter ou distribuer du contenu explicite ou inapproprié.",
+    "nav96": "Les utilisateurs ne doivent pas participer à des activités qui enfreignent les conditions d'utilisation des services tiers intégrés à l'application.",
+    "nav97": "N'utilisez pas l'application pour promouvoir ou participer à des comportements illégaux ou contraires à l'éthique.",
+    "nav98": "Merci d'être un membre responsable de notre communauté. Votre coopération garantit une expérience positive pour tous les utilisateurs.",
+    "nav100":"Retour"
+  }
+};
+    
+      </script>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Locarodix Star-ME APP
+            </span>
+          </a>
+
+          <div class="navbar-collapse" id="">
+            <div class="custom_menu-btn">
+              <button onclick="openNav()">
+                <span class="s-1"> </span>
+                <span class="s-2"> </span>
+                <span class="s-3"> </span>
+              </button>
+            </div>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="https://locarodix.com">
+                  <i class="fas fa-globe"></i> <u data-i18n="nav13">WEBSITE</u> <i class="fas fa-globe"></i>
+                </a>
+                <br>
+                <a href="">
+                  <i class="fas fa-store"></i> <u data-i18n="nav14">STORE</u> <i class="fas fa-store"></i>
+                </a>
+                <br>
+                <a href="help.html" data-i18n="nav15">CONTACT US</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- policy section -->
+  <section class="policy_section layout_padding2 layout_margin">
+    <div class="container">
+      <div class="heading_container">
+        <h2 data-i18n="nav1">
+          Terms and Conditions
+        </h2>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="content_container">
+        <h3 data-i18n="nav2">User Conduct and Obligations</h3>
+        <ul>
+          <li data-i18n="nav3">Respect all users. No harassment, bullying, or discrimination.</li>
+          <li data-i18n="nav4">Content you post must be lawful, non-offensive, and free of malware.</li>
+          <li data-i18n="nav5">Do not impersonate others or misrepresent your affiliation.</li>
+          <li data-i18n="nav6">Protect your login credentials; do not share them with others.</li>
+          <li data-i18n="nav7">Report any security vulnerabilities to our support team.</li>
+          <li data-i18n="nav8">Comply with all local and international laws applicable to your use of the app.</li>
+          <li data-i18n="nav9">Do not use the app for commercial purposes without our permission.</li>
+          <li data-i18n="nav10">Avoid posting spam, including unsolicited promotions or advertisements.</li>
+          <li data-i18n="nav11">Do not collect or harvest personal data from other users.</li>
+          <li data-i18n="nav12">Engage in no activities that disrupt the service or its users.</li>
+        </ul>
+
+        <h3 data-i18n="nav20">Content Policy</h3>
+        <ul>
+          <li data-i18n="nav21">You retain rights to your content, but grant us a license to use it.</li>
+          <li data-i18n="nav22">Do not post content that infringes on others' intellectual property rights.</li>
+          <li data-i18n="nav23">No posting of false information or fake news.</li>
+          <li data-i18n="nav24">Avoid content that could be considered obscene or pornographic.</li>
+          <li data-i18n="nav25">Do not promote violence or criminal activities.</li>
+          <li data-i18n="nav26">Intellectual property complaints must follow our formal process.</li>
+        </ul>
+
+        <h3 data-i18n="nav27">Service Use and Limitations</h3>
+        <ul>
+          <li data-i18n="nav28">We reserve the right to modify or discontinue any feature at our discretion.</li>
+          <li data-i18n="nav29">We aim to maintain the service but cannot guarantee uninterrupted access.</li>
+          <li data-i18n="nav30">Use of the app is at your own risk; we provide it "as is" without warranty.</li>
+          <li data-i18n="nav31">We reserve the right to remove any content that violates these terms.</li>
+          <li data-i18n="nav32">Your access to the service may be limited for maintenance or updates.</li>
+        </ul>
+
+        <h3 data-i18n="nav33">Legal and Financial Terms</h3>
+        <ul>
+          <li data-i18n="nav34">We are not liable for any content posted by users.</li>
+          <li data-i18n="nav35">Any legal disputes will be settled in accordance with France.</li>
+          <li data-i18n="nav36">You agree to indemnify us against any claims related to your use of the app.</li>
+          <li data-i18n="nav37">Our liability is limited - we are not liable for indirect damages.</li>
+          <li data-i18n="nav38">Subscriptions and purchases are subject to our refund policy.</li>
+        </ul>
+
+        <h3 data-i18n="nav39">Privacy and Data Protection</h3>
+        <ul>
+          <li data-i18n="nav40">We can see your data but not your password as described in our Privacy Policy.</li>
+          <li data-i18n="nav41">You consent to the collection and use of personal data for app functionality.</li>
+          <li data-i18n="nav42">We implement security measures to protect your data, but no system is infallible.</li>
+          <li data-i18n="nav43">You have rights to access, modify, and delete your personal data.</li>
+        </ul>
+
+        <h3 data-i18n="nav44">Additional Provisions</h3>
+        <ul>
+          <li data-i18n="nav45">These terms constitute the entire agreement between you and us.</li>
+          <li data-i18n="nav46">If any term is found to be unenforceable, the remainder will still apply.</li>
+          <li data-i18n="nav47">We may transfer our rights under these terms without restriction.</li>
+          <li data-i18n="nav48">Your use of third-party services within the app is subject to their terms.</li>
+          <li data-i18n="nav49">We may update these terms at any time; continued use constitutes acceptance.</li>
+          <li data-i18n="nav50">You cannot assign your rights under these terms without our consent.</li>
+          <li data-i18n="nav51">Any notices required will be given in the app or via email.</li>
+          <li data-i18n="nav52">We are not responsible for delays or failures in performance resulting from factors beyond our control.</li>
+          <li data-i18n="nav53">Feedback and suggestions become our property without any obligation to you.</li>
+          <li data-i18n="nav54">By using this app, you acknowledge that you have read, understood, and agreed to these terms.</li>
+        </ul>
+
+        <h3 data-i18n="nav55">Newly Added Rules</h3>
+        <ul>
+          <li data-i18n="nav56">Respect the privacy of other users and do not share their personal information without consent.</li>
+          <li data-i18n="nav57">Do not engage in activities that may harm the reputation of our app or its community.</li>
+          <li data-i18n="nav58">Any attempt to exploit vulnerabilities in the app's code or security features is strictly prohibited.</li>
+          <li data-i18n="nav59">Do not use automated scripts or bots to interact with the app or its users.</li>
+          <li data-i18n="nav60">All communications within the app should be conducted in a civil and respectful manner.</li>
+          <li data-i18n="nav61">Do not create multiple accounts for the purpose of evading sanctions or restrictions.</li>
+          <li data-i18n="nav62">Any attempts to circumvent or violate these terms will result in immediate account suspension.</li>
+          <li data-i18n="nav63">Users must be of legal age to use the app; underage users are not permitted.</li>
+          <li data-i18n="nav64">Do not share inappropriate or sensitive content, including but not limited to graphic violence or hate speech.</li>
+          <li data-i18n="nav65">Users are responsible for keeping their contact information up to date for communication purposes.</li>
+        </ul>
+
+        <h3 data-i18n="nav66">Addons Rules</h3>
+        <ul>
+          <li data-i18n="nav67">Do not engage in any form of cheating or exploiting bugs for personal gain.</li>
+          <li data-i18n="nav68">Do not upload or share any content that contains viruses or malicious code.</li>
+          <li data-i18n="nav69">Do not create accounts with the intent to impersonate others or deceive the community.</li>
+          <li data-i18n="nav70">Users should not engage in any form of discrimination based on race, gender, religion, or sexual orientation.</li>
+          <li data-i18n="nav72">Do not promote or glorify dangerous activities such as self-harm or substance abuse.</li>
+          <li data-i18n="nav73">Do not use the app to distribute unauthorized copies of copyrighted material.</li>
+          <li data-i18n="nav74">Users should not engage in activities that violate the privacy of others, including hacking or doxxing.</li>
+          <li data-i18n="nav75">Do not engage in activities that could disrupt the normal operation of the app or its servers.</li>
+          <li data-i18n="nav76">Users should not attempt to reverse engineer, decompile, or disassemble the app.</li>
+          <li data-i18n="nav77">Do not use the app to solicit or engage in illegal activities.</li>
+          <li data-i18n="nav78">Users should not upload or share any content that is defamatory or libelous.</li>
+          <li data-i18n="nav79">Do not use the app to promote pyramid schemes or other fraudulent schemes.</li>
+          <li data-i18n="nav80">Users should not attempt to access accounts or data belonging to other users without permission.</li>
+          <li data-i18n="nav81">Do not use the app to transmit or distribute spam or unsolicited messages.</li>
+          <li data-i18n="nav82">Users should not engage in activities that could harm the integrity of the app's ratings or reviews.</li>
+          <li data-i18n="nav83">Do not share login credentials or account access with others.</li>
+          <li data-i18n="nav84">Users should not create or use third-party tools or services that interact with the app in violation of these terms.</li>
+          <li data-i18n="nav85">Do not upload or share any content that is sexually explicit or pornographic.</li>
+          <li data-i18n="nav86">Users should not engage in any form of cyberbullying or harassment.</li>
+          <li data-i18n="nav87">Do not use the app to promote or organize illegal or violent activities.</li>
+          <li data-i18n="nav88">Users should not upload or share any content that depicts graphic violence or gore.</li>
+          <li data-i18n="nav89">Do not engage in any form of unauthorized advertising or promotion within the app.</li>
+          <li data-i18n="nav90">Users should not use the app to distribute any form of hate speech or discriminatory content.</li>
+          <li data-i18n="nav91">Do not use the app to engage in any form of illegal gambling.</li>
+          <li data-i18n="nav92">Users should not engage in any form of activity that violates the rights of others, including intellectual property rights.</li>
+          <li data-i18n="nav93">Do not use the app to transmit or distribute any form of malware.</li>
+          <li data-i18n="nav94" >Users should not engage in any form of activity that could harm the reputation of the app or its developers.</li>
+          <li data-i18n="nav95">Do not use the app to solicit or distribute explicit or inappropriate content.</li>
+          <li data-i18n="nav96">Users should not engage in any form of activity that violates the terms of service of third-party services integrated with the app.</li>
+          <li data-i18n="nav97">Do not use the app to promote or engage in any form of illegal or unethical behavior.</li>
+        </ul>
+
+        <p data-i18n="nav98">
+          Thank you for being a responsible member of our community. Your cooperation ensures a positive experience for all users.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- end policy section -->
+
+  <div class="back_button_container" style="text-align: center; margin: 20px 0;">
+    <a href="https://locarodix.com/starme/index.html" style="font-size: 24px; padding: 10px 20px; background-color: blueviolet; color: white; text-decoration: none; border-radius: 5px;" data-i18n="nav100">Back</a>
+  </div>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!-- footer section -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width");
+      document
+        .querySelector(".custom_menu-btn")
+        .classList.toggle("menu_btn-style");
+    }
+  </script>
+</body>
+
+</html>

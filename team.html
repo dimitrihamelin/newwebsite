@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+<!-- Meta pour un aperçu enrichi sur Discord, Twitter et Messages -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Locarodix Project">
+<meta property="og:description" content="Discover it!">
+<meta property="og:image" content="https://locarodix.com/images/Logo.png">
+<meta property="og:url" content="https://locarodix.com">
+<meta property="og:site_name" content="Locarodix">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Locarodix Project">
+<meta name="twitter:description" content="Discover it!">
+<meta name="twitter:image" content="https://locarodix.com/images/Logo.png">
+<meta name="twitter:url" content="https://locarodix.com">
+<meta name="twitter:site" content="@Locarodix"> <!-- Remplacez par votre handle Twitter -->
+<meta name="twitter:creator" content="@Locarodix"> <!-- Remplacez par votre handle Twitter -->
+  
+  <!-- Favicon for tabs -->
+  <link rel="icon" type="image/png" sizes="512x512" href="/images/Logo.png">
+
+
+  <title> Locarodix </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+    <!-- logo -->
+    <link rel="icon" href="favicon.ico" type="image/png">
+
+  <script>
+    const translations = {
+      en: {
+        "nav1": "Home",
+        "nav2": "Team",
+        "nav3": "StarMe App",
+        "nav4": "Store",
+
+        "team_section_title": "Our <span>Team</span>",
+
+        "team_member_dimitri_desc": "He is an entrepreneur and visionary founder of Locarodix. He created StarMe, an innovative mobile app designed to foster positive social interactions. The app encourages users to earn points by engaging with content, sharing inspiring moments, and supporting meaningful causes, all within a supportive online community.",
+        "team_member_axel_desc": "Axel has been passionate about augmented reality from a young age. As an active member of the Unity community, he dedicates much of his free time to developing innovative immersive experiences. Axel focuses particularly on pushing technological boundaries to create next-generation augmented reality solutions.",
+        "team_member_olivier_desc": "Olivier Suelves is the co-president of T0MIKE Records, an independent music studio. He plays a key role in overseeing studio operations, managing artist relations, and driving the studio's growth in the competitive music industry.",
+        "team_member_steven_desc": "He is the founder of RedProjet, a visionary entrepreneur dedicated to innovation in digital platforms, gaming communities, and hosting solutions. Known for projects like CubexLand and CyberSpaceHosting, they focus on creating immersive experiences and fostering vibrant online communities.",
+
+        "info_address_title": "Address",
+        "info_address_call": "Call (+33) 7 44 90 95 90",
+        "info_title": "Info",
+        "info_discover_starme": "Discover StarMe, the innovative social app that combines creativity and finance. 🚀 Share your ideas, connect with others, and explore a world of digital possibilities. 🌟",
+        "info_links_title": "Links",
+        "info_be_here_title": "Be here",
+        "info_dont_miss": "Don't miss the news"
+      },
+      fr: {
+        "nav1": "Accueil",
+        "nav2": "Équipe",
+        "nav3": "StarMe APP",
+        "nav4": "Boutique",
+
+        "team_section_title": "Notre <span>Équipe</span>",
+
+        "team_member_dimitri_desc": "Il est un entrepreneur et fondateur visionnaire de Locarodix. Il a créé StarMe, une application mobile innovante conçue pour favoriser des interactions sociales positives. L'application encourage les utilisateurs à gagner des points en interagissant avec du contenu, en partageant des moments inspirants et en soutenant des causes significatives, le tout au sein d'une communauté en ligne solidaire.",
+        "team_member_axel_desc": "Axel est passionné par la réalité augmentée depuis son plus jeune âge. Membre actif de la communauté Unity, il consacre une grande partie de son temps libre à développer des expériences immersives innovantes. Axel se concentre particulièrement sur le dépassement des limites technologiques afin de créer des solutions de réalité augmentée de nouvelle génération.",
+        "team_member_olivier_desc": "Olivier Suelves est le co-président de T0MIKE Records, un studio de musique indépendant. Il joue un rôle clé dans la supervision des opérations du studio, la gestion des relations avec les artistes et la croissance du studio dans l'industrie musicale hautement compétitive.",
+        "team_member_steven_desc": "Il est le fondateur de RedProjet, un entrepreneur visionnaire dédié à l'innovation dans les plateformes numériques, les communautés de jeux et les solutions d'hébergement. Connu pour des projets comme CubexLand et CyberSpaceHosting, il se concentre sur la création d'expériences immersives et le développement de communautés en ligne dynamiques.",
+
+        "info_address_title": "Adresse",
+        "info_address_call": "Appeler (+33) 7 44 90 95 90",
+        "info_title": "Info",
+        "info_discover_starme": "Découvrez StarMe, l'application sociale innovante qui allie créativité et finance. 🚀 Partagez vos idées, connectez-vous avec d'autres et explorez un monde de possibilités numériques. 🌟",
+        "info_links_title": "Liens",
+        "info_be_here_title": "Soyez là",
+        "info_dont_miss": "Ne manquez pas les actualités"
+      }
+    };
+  </script>
+
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="images/hero-bg.png" alt="">
+      </div>
+    </div>
+
+
+    <script>
+      // Détecter la langue du navigateur
+      const userLang = navigator.language.startsWith('fr') ? 'fr' : 'en';
+
+      // Appliquer les traductions à la page
+      function applyTranslations(lang) {
+        document.querySelectorAll("[data-i18n]").forEach(element => {
+          const key = element.getAttribute("data-i18n");
+          if (translations[lang][key]) {
+            element.innerHTML = translations[lang][key];
+          }
+        });
+      }
+
+      // Charger les traductions au démarrage
+      document.addEventListener("DOMContentLoaded", () => {
+        applyTranslations(userLang);
+      });
+    </script>
+
+    <!-- header section starts -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>Locarodix</span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html" data-i18n="nav1">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="team.html" data-i18n="nav2">Team <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://locarodix.com/starme/index.html" target="_blank" data-i18n="nav3">StarMe APP</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="https://starme.space" target="_blank" data-i18n="nav4">Store</a>
+              </li>
+
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- team section -->
+  <section class="team_section layout_padding">
+    <div class="container-fluid">
+      <div class="heading_container heading_center">
+        <h2 data-i18n="team_section_title">Our <span>Team</span></h2>
+      </div>
+
+      <div class="team_container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/Unknown.jpeg" class="img1" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>Dimitri Hamelin</h5>
+                <p data-i18n="team_member_dimitri_desc">
+                  He is an entrepreneur and visionary founder of Locarodix...
+                </p>
+              </div>
+              <div class="social_box">
+                <a href="https://www.linkedin.com/in/dimitri-hamelin-15b854256/?originalSubdomain=fr" target="_blank">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/dimitri.hamelin/?hl=fr" target="_blank">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/axel.webp" class="img1" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>Axel Robe</h5>
+                <p data-i18n="team_member_axel_desc">
+                  Axel has been passionate about augmented reality...
+                </p>
+              </div>
+              <div class="social_box">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/olivier.jpeg" class="img1" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>Olivier Suelves OTT</h5>
+                <p data-i18n="team_member_olivier_desc">
+                  Olivier Suelves is the co-president of T0MIKE Records...
+                </p>
+              </div>
+              <div class="social_box">
+                <a href="https://www.linkedin.com/in/olivier-suelves-ott-77a35b25a/" target="_blank">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/steven.jpeg" class="img1" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>Steven Petiteau</h5>
+                <p data-i18n="team_member_steven_desc">
+                  He is the founder of RedProjet...
+                </p>
+              </div>
+              <div class="social_box">
+                <a href="https://www.linkedin.com/in/steven-petiteau-6b628a14b/" target="_blank">
+                  <i class="fa fa-linkedin" aria-hidden="true" target="_blank"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end team section -->
+
+  <!-- info section -->
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_contact">
+            <h4 data-i18n="info_address_title">Address</h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>Paris</span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span data-i18n="info_address_call">Call (+33) 7 44 90 95 90</span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>locarodix@gmail.com</span>
+              </a>
+            </div>
+          </div>
+          <div class="info_social">
+            <a href="https://www.facebook.com/people/StarMe/61557136050099/">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://x.com/locarodix">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/92888943/admin/dashboard/">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/locarodix/">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_detail">
+            <h4 data-i18n="info_title">Info</h4>
+            <p data-i18n="info_discover_starme">
+              Discover StarMe, the innovative social app that combines creativity and finance...
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2 mx-auto info_col">
+          <div class="info_link_box">
+            <h4 data-i18n="info_links_title">Links</h4>
+            <div class="info_links">
+              <!-- On peut réutiliser nav1, nav2 pour ces liens -->
+              <a class="active" href="index.html" data-i18n="nav1">Home</a>
+              <a class="" href="team.html" data-i18n="nav2">Team</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info_col ">
+          <h4 data-i18n="info_be_here_title">Be here</h4>
+
+          <h6 data-i18n="info_dont_miss">Don't miss the news</h6>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end info section -->
+
+  <!-- jQery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>
+```
