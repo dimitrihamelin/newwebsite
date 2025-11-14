@@ -1,6 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/mghsmpbb/public_html
-    - /bin/cp -R * $DEPLOYPATH
-
