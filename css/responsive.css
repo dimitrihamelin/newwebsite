@@ -16,7 +16,11 @@
   }
 
   .slider_section {
-    padding: 45px 0 75px 0;
+    padding: 60px 0 75px 0;
+  }
+
+  .slider_section .detail-box h1 {
+    font-size: 2.6rem;
   }
 
   .custom_nav-container .navbar-nav {
@@ -24,13 +28,23 @@
     align-items: center;
   }
 
-
   .custom_nav-container .navbar-nav .nav-item .nav-link {
     padding: 5px 25px;
     margin: 5px 0;
   }
 
+  /* Navbar scrolled on mobile */
+  .header_section.scrolled {
+    position: fixed;
+  }
 
+  .why_section .why_container {
+    gap: 16px;
+  }
+
+  .why_section .box {
+    flex: 1 1 180px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -38,13 +52,25 @@
     margin-bottom: 45px;
   }
 
+  .slider_section .detail-box h1 {
+    font-size: 2.2rem;
+  }
+
+  .team_section .team_container .box .img-box img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .why_section .box {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
 }
 
 @media (max-width: 576px) {
   .header_section .header_top .contact_nav a span {
     display: none;
   }
-
 
   .client_section .client_container {
     width: 100%;
@@ -65,11 +91,24 @@
     position: unset;
     margin: 0 2.5px;
   }
+
+  .scroll-top-btn {
+    bottom: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 480px) {
   .slider_section .detail-box h1 {
-    font-size: 2rem;
+    font-size: 1.9rem;
+  }
+
+  .slider_section .detail-box .btn-box .btn-hero-cta {
+    padding: 10px 22px;
+    font-size: 0.88rem;
   }
 
   .track_section form {
@@ -93,7 +132,7 @@
   }
 
   .service_section .box .img-box {
-    justify-content: flex-start;
+    justify-content: center;
     margin-bottom: 15px;
   }
 }
