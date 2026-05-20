@@ -128,17 +128,6 @@ const translations = {
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
-  <style>
-    .btn-2 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .carousel-inner .img-box img {
-      margin-left: 20%; /* Ajustez cette valeur selon vos besoins */
-    }
-  </style>
 </head>
 
 <body>
@@ -182,39 +171,6 @@ const translations = {
     <!-- end header section -->
     <!-- slider section -->
 
-    <style>
-      .carousel-item {
-        display: none;
-        margin-left: 200px; /* Configuration pour les grands écrans */
-        float: none;
-        border-radius: 10px;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-      }
-      
-      .carousel-item img {
-        max-width: 100%;
-        margin-right: 100px;
-        border-radius: 100px;
-        max-height: 100%;
-        object-fit: contain; /* Garde le ratio d'aspect */
-      }
-      
-      /* Pour les écrans plus petits (par exemple, en dessous de 768px) */
-      @media (max-width: 768px) {
-        .carousel-item {
-          margin: 0 auto; /* Centrer horizontalement pour les petits écrans */
-        }
-      
-        .carousel-item img {
-          margin: 0 auto; /* Centrer l'image */
-          display: block; /* Assure que l'image soit centrée */
-          max-width: 30%; /* Réduit la largeur de l'image pour les petits écrans */
-          max-height: 40%; /* Réduit la hauteur de l'image pour les petits écrans */
-          border-radius: 20px; /* Ajuster si besoin pour les petits écrans */
-        }
-      }
-      </style>
       
     <section class=" slider_section position-relative">
       <div class="container">
@@ -277,7 +233,7 @@ const translations = {
 <br>
 <br>
 
-<section class="video_section">
+<section class="video_section fade-in">
   <div class="container">
     <div class="heading_container">
       <h2 data-i18n="description3">
@@ -362,7 +318,7 @@ const translations = {
 
   
   <!-- feature section -->
-  <section class="feature_section layout_padding2 layout_margin">
+  <section class="feature_section layout_padding2 layout_margin fade-in">
     <div class="container">
       <div class="heading_container">
         <h2 data-i18n="description4">
@@ -509,7 +465,7 @@ const translations = {
 
   <!-- download section -->
 
-  <section class="download_section layout_padding-bottom">
+  <section class="download_section layout_padding-bottom fade-in">
     <div class="container">
       <div class="heading_container">
         <h2 data-i18n="description11">
@@ -598,7 +554,7 @@ const translations = {
   <!-- end download section -->
 
   <!-- about section -->
-  <section class="about_section layout_padding">
+  <section class="about_section layout_padding fade-in">
     <div class="container">
       <div class="heading_container d-flex justify-content-lg-start">
         <h2 data-i18n="description24">
@@ -629,7 +585,7 @@ const translations = {
   <!-- end subscribe section -->
 
   <!-- client section -->
-  <section class="client_section layout_margin" style="margin: 30px;">
+  <section class="client_section layout_margin fade-in">
       <div class="heading_container">
         <br>
         <h2 data-i18n="description27">
@@ -675,14 +631,22 @@ const translations = {
 
   <!-- end info section -->
 
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="displayYear"></span> <a href="https://locarodix.com">Locarodix</a> — StarMe App. All rights reserved.</p>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+    <i class="fa fa-arrow-up"></i>
+  </button>
+
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
 
   <script>
-    // Détecter la langue du navigateur
+    // Language detection & translations
     const userLang = navigator.language.startsWith('fr') ? 'fr' : 'en';
-  
-    // Appliquer les traductions à la page
     function applyTranslations(lang) {
       document.querySelectorAll("[data-i18n]").forEach(element => {
         const key = element.getAttribute("data-i18n");
@@ -691,20 +655,52 @@ const translations = {
         }
       });
     }
-  
-    // Charger les traductions au démarrage
-    document.addEventListener("DOMContentLoaded", () => {
-      applyTranslations(userLang);
-    });
-  </script>  
+    document.addEventListener("DOMContentLoaded", () => { applyTranslations(userLang); });
 
-  <script>
+    // Nav overlay
     function openNav() {
       document.getElementById("myNav").classList.toggle("menu_width");
-      document
-        .querySelector(".custom_menu-btn")
-        .classList.toggle("menu_btn-style");
+      document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style");
     }
+
+    // Footer year
+    (function() {
+      var el = document.getElementById('displayYear');
+      if (el) el.textContent = new Date().getFullYear();
+    })();
+
+    // Navbar sticky
+    window.addEventListener('scroll', function() {
+      var navbar = document.querySelector('.header_section');
+      if (!navbar) return;
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Scroll-to-top
+    (function() {
+      var btn = document.getElementById('scrollTopBtn');
+      window.addEventListener('scroll', function() {
+        btn.classList.toggle('visible', window.scrollY > 400);
+      });
+      btn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
+
+    // Scroll reveal
+    (function() {
+      var els = document.querySelectorAll('.fade-in');
+      if (!els.length) return;
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      els.forEach(function(el) { observer.observe(el); });
+    })();
   </script>
 </body>
 
